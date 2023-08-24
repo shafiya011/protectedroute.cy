@@ -1,0 +1,34 @@
+
+.headTool {
+  margin: 0px 5px;
+}
+.breadCrums {
+  font-size: 13px; 
+  white-space: break-spaces;
+  cursor: pointer;
+  color: rgb(61, 122, 182);
+}
+
+
+.reviewCard .ant-card-head {
+  color: #242e39;
+  border-color: #d9d9d9;
+  background: #e4e7ea;
+  line-height: 1.5715;
+  padding: 12px 0px;
+}
+
+.ant-card-meta-detail .ant-card-meta-description  {
+     font-size: 15px;
+    color: rgb(136, 149, 163);
+    min-height: 20px;
+    letter-spacing: 0.02em 
+}
+.ant-card .ant-card-meta-detail >div:not(:last-child) {
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(58, 74, 91);}
+
+   
