@@ -10,10 +10,14 @@ describe("template spec", () => {
   });
   it("should successfully log in with valid credentials", () => {
     cy.get(".entryLogin").click();
+  });
+  it("Login with the credentials, to see the protected page", () => {
     cy.get(".userInput").type("shafiya");
     cy.get(".emailInput").type("shafiya@gmail.com");
     cy.get(".loginSubmitBtn").click();
+    cy.url().should("include", "/reviews");
     cy.get(".entryReviews").click();
+    cy.contains("Welcome, shafiya!").should("be.visible");
     cy.get(".replyBtn").click();
     cy.get(".saveBtn").click();
     cy.get(".replyError").should("be.visible");
