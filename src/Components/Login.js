@@ -13,10 +13,12 @@ const Login = () => {
 
   const handleLogin = () => {
     Auth.login(user);
+    // localStorage.setItem();
+    // localStorage.getItem();
     Navigate("/landingpage");
-    setTimeout(() => {
-      alert(`Hi ${user}, you have successfully loggedin`);
-    }, 7000);
+    // setTimeout(() => {
+    //   alert(`Hi ${user}, you have successfully loggedin!!!`);
+    // }, 4000);
   };
 
   const isSubmitDisabled = user.trim() === "" && email.trim() === "";
