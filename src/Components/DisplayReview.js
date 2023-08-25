@@ -1,6 +1,6 @@
 import React from "react";
 import { MoreOutlined } from "@ant-design/icons";
-import { Button, Dropdown } from "antd";
+import { Button } from "antd";
 import {
   ActionContainer,
   NewestBtn,
@@ -61,7 +61,6 @@ const DisplayReview = () => {
           </MoreDropDown>
         </div>
       </ActionContainer>
-      <div>{/* <Reviews/> */}</div>
     </div>
   );
 };

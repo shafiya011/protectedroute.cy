@@ -1,4 +1,4 @@
-import { Card, Avatar, Rate, Tag, Button, Divider } from "antd";
+import { Avatar, Rate, Button, Divider } from "antd";
 import { useState } from "react";
 import React from "react";
 import linkedin from "../Images.js/linkedin.svg";
@@ -30,9 +30,9 @@ import {
   ReviewCard,
   LocationTag,
   SocialIconsImg,
+  MetaCard,
 } from "../Stylings/ReviewStylings";
 import { NameCard } from "../Stylings/ReviewHeadStylings";
-import Meta from "antd/es/card/Meta";
 import {
   ScheduleOutlined,
   EditOutlined,
@@ -96,7 +96,7 @@ const ProtectedReview = () => {
       <ReviewCard className="reviewCard" title="Reviews">
         <div>
           <NameContainer>
-            <Meta
+            <MetaCard
               avatar={
                 <Avatar src="https://tppwebsolutions.com/wp-content/uploads/logo-demo3.png" />
               }
@@ -175,7 +175,7 @@ const ProtectedReview = () => {
 
               {replyButton ? (
                 <Button
-                  className="replyBtn"
+                  id="replyBtn"
                   type="primary"
                   onClick={HandleReply}
                   style={{ color: "white" }}
@@ -198,7 +198,7 @@ const ProtectedReview = () => {
                   onClick={handleViewReply}
                   style={{ color: "blue" }}
                 >
-                  Reply
+                  viewReply
                 </Button>
               ) : (
                 <Button
@@ -215,7 +215,7 @@ const ProtectedReview = () => {
           {show && (
             <div>
               <ReplyContainer
-                className="replyContainer"
+                id="replyContainer"
                 value={replyText}
                 onChange={(e) => {
                   setreplyText(e.target.value);

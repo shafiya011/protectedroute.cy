@@ -1,8 +1,7 @@
 import { Card, Tag } from "antd";
+import Meta from "antd/es/card/Meta";
 import styled from "styled-components";
 export const ReviewContainer = styled.aside`
-  //   width: 40vw;
-  // border: 1px solid black;
   background-color: white;
   border-radius: 20px;
   margin: auto;
@@ -11,6 +10,29 @@ export const ReviewContainer = styled.aside`
 `;
 export const ReviewCard = styled(Card)`
   margin: 30px auto;
+  .ant-card-head {
+    color: #242e39;
+    border-color: #d9d9d9;
+    background: #e4e7ea;
+    line-height: 1.6;
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+`;
+export const MetaCard = styled(Meta)`
+  .ant-card-meta-detail .ant-card-meta-description {
+    font-size: 15px;
+    color: rgb(136, 149, 163);
+    min-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .ant-card .ant-card-meta-title {
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(58, 74, 91);
+  }
 `;
 export const NameContainer = styled.div`
   display: flex;

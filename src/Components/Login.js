@@ -12,18 +12,21 @@ const Login = () => {
   const Navigate = useNavigate();
 
   const handleLogin = () => {
+    // localStorage.setItem("user", JSON.stringify(user));
+    // localStorage.setItem("email", JSON.stringify(email));
+    // localStorage.removeItem("user");
+    // localStorage.removeItem("email");
     Auth.login(user);
-    // localStorage.setItem();
-    // localStorage.getItem();
     Navigate("/landingpage");
-    // setTimeout(() => {
-    //   alert(`Hi ${user}, you have successfully loggedin!!!`);
-    // }, 4000);
+    setTimeout(() => {
+      alert(`Hi ${user}, you have successfully loggedin!!!`);
+    }, 4000);
   };
 
   const isSubmitDisabled = user.trim() === "" && email.trim() === "";
   return (
     <LoginForm className="formName">
+      <h3>Login to View The Protected page!</h3>
       <Form
         name="basic"
         labelCol={{
@@ -95,6 +98,7 @@ const Login = () => {
         >
           <Button
             className="loginSubmitBtn"
+            id="submitBtn"
             type="primary"
             htmlType="submit"
             onClick={() => handleLogin()}

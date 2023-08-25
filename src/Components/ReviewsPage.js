@@ -20,7 +20,12 @@ const ReviewsPage = () => {
       <DisplayReview></DisplayReview>
       <ProtectedReview />
       <footer>
-        <Button type="primary" className="logOutBtn" onClick={handleLogout}>
+        <Button
+          type="primary"
+          id="logOutBtn"
+          className="logOutBtn"
+          onClick={handleLogout}
+        >
           logout
         </Button>
       </footer>

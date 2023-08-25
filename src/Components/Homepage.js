@@ -1,5 +1,3 @@
-// import "../../public/";
-
 import LeftPattern from "../Images.js/bg-pattern-intro-left-desktop.svg";
 import TopRightPattern from "../Images.js/bg-pattern-intro-right-desktop.svg";
 import MobileLeftPattern from "../Images.js/bg-pattern-intro-left-mobile.svg";
